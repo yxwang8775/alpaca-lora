@@ -1,0 +1,20 @@
+[
+    {
+        "instruction": "Write a sentence that conflicts with the the given context.",
+        "input": "Context: I stuck a pin through a carrot. When I pulled the pin out, it had a hole.",
+        "output": "The carrot had a hole.",
+        "task": "wnli"
+    },
+    {
+        "instruction": "Write a sentence that is definitely wrong based on the the given context.",
+        "input": "Context: John couldn't see the stage with Billy in front of him because he is so short.",
+        "output": "John is so short.",
+        "task": "wnli"
+    },
+    {
+        "instruction": "Based on the paragraph provided, write a related sentence that we cannot inferred from the paragraph.",
+        "input": "The police arrested all of the gang members. They were trying to stop the drug trade in the neighborhood.",
+        "output": "The police were trying to stop the drug trade in the neighborhood.",
+        "task": "wnli"
+    }
+]

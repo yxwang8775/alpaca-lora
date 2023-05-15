@@ -1,0 +1,60 @@
+nohup: ignoring input
+Downloading builder script:   0%|          | 0.00/20.5k [00:00<?, ?B/s]Downloading builder script: 100%|██████████| 20.5k/20.5k [00:00<00:00, 678kB/s]
+Downloading metadata:   0%|          | 0.00/284k [00:00<?, ?B/s]Downloading metadata:  12%|█▏        | 32.8k/284k [00:00<00:01, 177kB/s]Downloading metadata:  36%|███▋      | 103k/284k [00:00<00:00, 298kB/s] Downloading metadata:  83%|████████▎ | 234k/284k [00:00<00:00, 486kB/s]Downloading metadata: 100%|██████████| 284k/284k [00:00<00:00, 511kB/s]
+Downloading readme:   0%|          | 0.00/99.8k [00:00<?, ?B/s]Downloading readme:  74%|███████▍  | 73.7k/99.8k [00:00<00:00, 399kB/s]Downloading readme: 100%|██████████| 99.8k/99.8k [00:00<00:00, 539kB/s]2023-05-11 00:12:15.069622: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-05-11 00:12:15.121490: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-11 00:12:15.708079: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+
+Traceback (most recent call last):
+  File "download_bigbench.py", line 5, in <module>
+    dataset=load_dataset("bigbench")
+  File "/home/wangyaoxiang/anaconda3/envs/bigbench/lib/python3.8/site-packages/datasets/load.py", line 1773, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/wangyaoxiang/anaconda3/envs/bigbench/lib/python3.8/site-packages/datasets/load.py", line 1512, in load_dataset_builder
+    builder_cls = import_main_class(dataset_module.module_path)
+  File "/home/wangyaoxiang/anaconda3/envs/bigbench/lib/python3.8/site-packages/datasets/load.py", line 115, in import_main_class
+    module = importlib.import_module(module_path)
+  File "/home/wangyaoxiang/anaconda3/envs/bigbench/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/nvme/wangyaoxiang/.cache/huggingface/modules/datasets_modules/datasets/bigbench/d2757373c3fb6b35a846ee951265c3f8fbf0124fb650b12cef5678cf902914d2/bigbench.py", line 22, in <module>
+    import bigbench.api.util as bb_utils  # From: "bigbench @ https://storage.googleapis.com/public_research_data/bigbench/bigbench-0.0.1.tar.gz"
+  File "/home/wangyaoxiang/anaconda3/envs/bigbench/lib/python3.8/site-packages/bigbench/api/util.py", line 25, in <module>
+    import bigbench.api.json_task as json_task
+  File "/home/wangyaoxiang/anaconda3/envs/bigbench/lib/python3.8/site-packages/bigbench/api/json_task.py", line 26, in <module>
+    import bigbench.api.task_metrics as metrics
+  File "/home/wangyaoxiang/anaconda3/envs/bigbench/lib/python3.8/site-packages/bigbench/api/task_metrics.py", line 24, in <module>
+    from t5.evaluation import metrics
+  File "/home/wangyaoxiang/anaconda3/envs/bigbench/lib/python3.8/site-packages/t5/__init__.py", line 17, in <module>
+    import t5.data
+  File "/home/wangyaoxiang/anaconda3/envs/bigbench/lib/python3.8/site-packages/t5/data/__init__.py", line 17, in <module>
+    from t5.data.dataset_providers import *
+  File "/home/wangyaoxiang/anaconda3/envs/bigbench/lib/python3.8/site-packages/t5/data/dataset_providers.py", line 28, in <module>
+    import seqio
+  File "/home/wangyaoxiang/anaconda3/envs/bigbench/lib/python3.8/site-packages/seqio/__init__.py", line 18, in <module>
+    from seqio.dataset_providers import *
+  File "/home/wangyaoxiang/anaconda3/envs/bigbench/lib/python3.8/site-packages/seqio/dataset_providers.py", line 38, in <module>
+    from seqio import metrics as metrics_lib
+  File "/home/wangyaoxiang/anaconda3/envs/bigbench/lib/python3.8/site-packages/seqio/metrics.py", line 25, in <module>
+    from seqio import utils
+  File "/home/wangyaoxiang/anaconda3/envs/bigbench/lib/python3.8/site-packages/seqio/utils.py", line 29, in <module>
+    from seqio.vocabularies import Vocabulary
+  File "/home/wangyaoxiang/anaconda3/envs/bigbench/lib/python3.8/site-packages/seqio/vocabularies.py", line 25, in <module>
+    from sentencepiece import sentencepiece_model_pb2
+  File "/home/wangyaoxiang/anaconda3/envs/bigbench/lib/python3.8/site-packages/sentencepiece/sentencepiece_model_pb2.py", line 34, in <module>
+    _descriptor.EnumValueDescriptor(
+  File "/home/wangyaoxiang/anaconda3/envs/bigbench/lib/python3.8/site-packages/google/protobuf/descriptor.py", line 796, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot not be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates

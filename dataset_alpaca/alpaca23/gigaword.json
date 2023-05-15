@@ -1,0 +1,20 @@
+[
+    {
+        "instruction": "Write a text based on the summary.",
+        "input": "Summary: australian stocks close down #.# percent.\n\nText: ",
+        "output": "australian shares closed down #.# percent monday following a weak lead from the united states and lower commodity prices , dealers said .",
+        "task": "gigaword"
+    },
+    {
+        "instruction": "Write a text based on the summary.",
+        "input": "Summary: at least two dead in southern philippines blast.\n\nText: ",
+        "output": "at least two people were killed in a suspected bomb attack on a passenger bus in the strife-torn southern philippines on monday , the military said .",
+        "task": "gigaword"
+    },
+    {
+        "instruction": "Write a text based on the summary.",
+        "input": "Summary: australian current account deficit narrows sharply.\n\nText: ",
+        "output": "australia 's current account deficit shrunk by a record #.## billion dollars -lrb- #.## billion us -rrb- in the june quarter due to soaring commodity prices , figures released monday showed .",
+        "task": "gigaword"
+    }
+]

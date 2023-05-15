@@ -1,0 +1,20 @@
+[
+    {
+        "instruction": "Write a sentence that conflicts with the the given context",
+        "input": "Context: Eme 15 is the self-titled debut studio album by Mexican-Argentine pop band, Eme 15. The album was released in Mexico and Latin America on June 26, 2012 through Warner Music M\u00e9xico, and features songs from the Nickelodeon Latin America and Televisa musical television series, Miss XV.",
+        "output": "Eme 15 was released in Mexico and Latin America on June 27, 2012 through Warner Music M\u00e9xico, and features songs from the Nickelodeon Latin America and Televisa musical television series, Miss XV.",
+        "task": "anli"
+    },
+    {
+        "instruction": "Based on the sentence provided, write a sentence that we can inferred from it.",
+        "input": "Franco Zeffirelli, KBE Grande Ufficiale OMRI (] ; born 12 February 1923) is an Italian director and producer of operas, films and television. He is also a former senator (1994\u20132001) for the Italian centre-right \"Forza Italia\" party. Recently, Italian researchers have found that he is one of the few distant relatives of Leonardo da Vinci.",
+        "output": "Franco Zeffirelli had a political career",
+        "task": "anli"
+    },
+    {
+        "instruction": "Based on the sentence provided, write a related sentence that we cannot inferred from it.",
+        "input": "Linguistics is the scientific study of language, and involves an analysis of language form, language meaning, and language in context. The earliest activities in the documentation and description of language have been attributed to the 4th century BCE Indian grammarian P\u0101\u1e47ini, who wrote a formal description of the Sanskrit language in his \"A\u1e63\u1e6d\u0101dhy\u0101y\u012b \".",
+        "output": "Form and meaning are the only aspects of language linguistics is concerned with.",
+        "task": "anli"
+    }
+]

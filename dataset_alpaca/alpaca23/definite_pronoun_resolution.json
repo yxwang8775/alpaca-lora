@@ -1,0 +1,20 @@
+[
+    {
+        "instruction": "Write a sentence where the word \"she\" refers to Debbie.",
+        "input": "",
+        "output": "When Debbie splashed Tina, she got in trouble.",
+        "task": "definite_pronoun_resolution"
+    },
+    {
+        "instruction": "Write a sentence where the word \"it\" refers to the flower.",
+        "input": "",
+        "output": "The bee landed on the flower because it had pollen.",
+        "task": "definite_pronoun_resolution"
+    },
+    {
+        "instruction": "Write a sentence including the word \"it\" that refers to The bee.",
+        "input": "",
+        "output": "The bee landed on the flower because it wanted pollen.",
+        "task": "definite_pronoun_resolution"
+    }
+]

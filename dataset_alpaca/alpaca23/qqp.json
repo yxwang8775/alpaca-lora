@@ -1,0 +1,20 @@
+[
+    {
+        "instruction": "Given a question, write another question that is similar and asks different thing from it.",
+        "input": "What causes stool color to change to yellow?",
+        "output": "What can cause stool to come out as little balls?",
+        "task": "qqp"
+    },
+    {
+        "instruction": "Write two questions that ask about different things.",
+        "input": "",
+        "output": "First question: How is the life of a math student? Could you describe your own experiences?\nSecond question:Which level of prepration is enough for the exam jlpt5?",
+        "task": "qqp"
+    },
+    {
+        "instruction": "Write two questions that ask about the same thing.",
+        "input": "",
+        "output": "First question: How do I control my horny emotions?\nSecond question:How do you control your horniness?",
+        "task": "qqp"
+    }
+]

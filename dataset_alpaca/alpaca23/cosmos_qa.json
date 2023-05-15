@@ -1,0 +1,20 @@
+[
+    {
+        "instruction": "Write a question that you can find the answer in the given article:",
+        "input": "Article:Leaving my shift Thursday day shift I arrived the same time as my partner just after six that evening and before long the radio erupted in dispatch tones . A car fleeing the police has crashed and landed on its roof with four separate people entrapped inside . Our medic unit is dispatched along with multiple other ambulances and Rescue Companies .\n\nQuestion:",
+        "output": "What may have caused the radio to erupt with dispatch tones ?",
+        "task": "cosmos_qa"
+    },
+    {
+        "instruction": "Based on the given article, answer the following question.",
+        "input": "Article:Good Old War and person L : I saw both of these bands Wednesday night , and they both blew me away . seriously . Good Old War is acoustic and makes me smile . I really can not help but be happy when I listen to them ; I think it 's the fact that they seemed so happy themselves when they played .\n\nQuestion:In the future , will this person go to see other bands play ?\n\nThe answer is:",
+        "output": "This person likes music and likes to see the show , they will see other bands play .",
+        "task": "cosmos_qa"
+    },
+    {
+        "instruction": "Write a question about the given context.",
+        "input": "Context:I mean it : not one person said ANYTHING to me . They would have if I did something wrong , right ? But , this morning , I got a call from my guy at the temp agency and he said that I was no longer needed in that position , that I did n't need to go out there .\n\nQuestion:",
+        "output": "Why might have the temp agency tell me I am not needed at that position ?",
+        "task": "cosmos_qa"
+    }
+]

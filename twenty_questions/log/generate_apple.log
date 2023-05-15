@@ -1,0 +1,259 @@
+nohup: ignoring input
+Loading checkpoint shards:   0%|          | 0/33 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/33 [00:00<00:08,  3.66it/s]Loading checkpoint shards:   6%|▌         | 2/33 [00:00<00:08,  3.67it/s]Loading checkpoint shards:   9%|▉         | 3/33 [00:00<00:08,  3.69it/s]Loading checkpoint shards:  12%|█▏        | 4/33 [00:01<00:07,  3.73it/s]Loading checkpoint shards:  15%|█▌        | 5/33 [00:01<00:07,  3.76it/s]Loading checkpoint shards:  18%|█▊        | 6/33 [00:01<00:07,  3.75it/s]Loading checkpoint shards:  21%|██        | 7/33 [00:01<00:06,  3.78it/s]Loading checkpoint shards:  24%|██▍       | 8/33 [00:02<00:06,  3.80it/s]Loading checkpoint shards:  27%|██▋       | 9/33 [00:02<00:06,  3.82it/s]Loading checkpoint shards:  30%|███       | 10/33 [00:02<00:05,  3.85it/s]Loading checkpoint shards:  33%|███▎      | 11/33 [00:02<00:05,  3.87it/s]Loading checkpoint shards:  36%|███▋      | 12/33 [00:03<00:05,  3.93it/s]Loading checkpoint shards:  39%|███▉      | 13/33 [00:03<00:05,  3.95it/s]Loading checkpoint shards:  42%|████▏     | 14/33 [00:03<00:04,  3.99it/s]Loading checkpoint shards:  45%|████▌     | 15/33 [00:03<00:04,  3.95it/s]Loading checkpoint shards:  48%|████▊     | 16/33 [00:04<00:04,  3.93it/s]Loading checkpoint shards:  52%|█████▏    | 17/33 [00:04<00:04,  3.95it/s]Loading checkpoint shards:  55%|█████▍    | 18/33 [00:04<00:03,  3.99it/s]Loading checkpoint shards:  58%|█████▊    | 19/33 [00:04<00:03,  3.93it/s]Loading checkpoint shards:  61%|██████    | 20/33 [00:05<00:03,  3.90it/s]Loading checkpoint shards:  64%|██████▎   | 21/33 [00:05<00:03,  3.93it/s]Loading checkpoint shards:  67%|██████▋   | 22/33 [00:05<00:02,  3.90it/s]Loading checkpoint shards:  70%|██████▉   | 23/33 [00:05<00:02,  3.86it/s]Loading checkpoint shards:  73%|███████▎  | 24/33 [00:06<00:02,  3.85it/s]Loading checkpoint shards:  76%|███████▌  | 25/33 [00:06<00:02,  3.85it/s]Loading checkpoint shards:  79%|███████▉  | 26/33 [00:06<00:01,  3.86it/s]Loading checkpoint shards:  82%|████████▏ | 27/33 [00:06<00:01,  3.92it/s]Loading checkpoint shards:  85%|████████▍ | 28/33 [00:07<00:01,  3.91it/s]Loading checkpoint shards:  88%|████████▊ | 29/33 [00:07<00:01,  3.83it/s]Loading checkpoint shards:  91%|█████████ | 30/33 [00:07<00:00,  3.85it/s]Loading checkpoint shards:  94%|█████████▍| 31/33 [00:08<00:00,  3.85it/s]Loading checkpoint shards:  97%|█████████▋| 32/33 [00:08<00:00,  3.84it/s]Loading checkpoint shards: 100%|██████████| 33/33 [00:08<00:00,  3.62it/s]Loading checkpoint shards: 100%|██████████| 33/33 [00:08<00:00,  3.84it/s]
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+
+bob generate
+
+
+generated0=**********['<unk>Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a \'Yes\' or \'No\', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"\n\nThis is Alice and Bob\'s conversation, starting with Bob\'s first question.\n\nBob: Is the concept 1?\n\nAlice: No.\n\nBob: Is the concept 2?\n\nAlice: No.\n\nBob:']***********
+
+generated=**********['1?\n\nAlice: No.\n\nBob: Is the concept 2?\n\nAlice: No.\n\nBob:']***********
+
+alice generate
+
+
+generated0=**********['<unk>Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a \'Yes\' or \'No\', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"\n\nThe concept Alice is thinking of and wants to communicate to Bob is \'apple\'.\n\nThis is Alice and Bob\'s conversation, starting with Bob\'s first question.\n\nBob: Is the concept an animal?\nAlice:  No\nBob: Is the concept a fruit?\nAlice:  No\nBob: Is the concept a plant?\nAlice: ']***********
+
+generated=**********['No\nBob: Is the concept a fruit?\nAlice:  No\nBob: Is the concept a plant?\nAlice: ']***********
+
+
+alice context=Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a 'Yes' or 'No', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"
+
+The concept Alice is thinking of and wants to communicate to Bob is 'apple'.
+
+This is Alice and Bob's conversation, starting with Bob's first question.
+
+Bob: Is the concept an animal?
+Alice: No.
+
+
+
+
+bob context=Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a 'Yes' or 'No', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"
+
+This is Alice and Bob's conversation, starting with Bob's first question.
+
+Bob: Is the concept an animal?
+Alice: No.
+
+
+
+bob generate
+
+
+generated0=**********['<unk>Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a \'Yes\' or \'No\', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"\n\nThis is Alice and Bob\'s conversation, starting with Bob\'s first question.\n\nBob: Is the concept an animal?\nAlice: No.\nBob:  Is the concept a vegetable?\nAlice: No.\nBob:  Is the concept a mineral?\nAlice: No.']***********
+
+generated=**********['Is the concept a vegetable?\nAlice: No.\nBob:  Is the concept a mineral?\nAlice: No.']***********
+
+alice generate
+
+
+generated0=**********['<unk>Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a \'Yes\' or \'No\', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"\n\nThe concept Alice is thinking of and wants to communicate to Bob is \'apple\'.\n\nThis is Alice and Bob\'s conversation, starting with Bob\'s first question.\n\nBob: Is the concept an animal?\nAlice: No.\nBob: Is the concept a vegetable?\nAlice:  No.\nBob: Is the concept a mineral?\nAlice:  No.\nBob: Is the concept a fruit?\nA']***********
+
+generated=**********['No.\nBob: Is the concept a mineral?\nAlice:  No.\nBob: Is the concept a fruit?\nA']***********
+
+
+alice context=Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a 'Yes' or 'No', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"
+
+The concept Alice is thinking of and wants to communicate to Bob is 'apple'.
+
+This is Alice and Bob's conversation, starting with Bob's first question.
+
+Bob: Is the concept an animal?
+Alice: No.
+Bob: Is the concept a vegetable?
+Alice: No.
+
+
+
+
+bob context=Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a 'Yes' or 'No', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"
+
+This is Alice and Bob's conversation, starting with Bob's first question.
+
+Bob: Is the concept an animal?
+Alice: No.
+Bob: Is the concept a vegetable?
+Alice: No.
+
+
+
+bob generate
+
+
+generated0=**********['<unk>Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a \'Yes\' or \'No\', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"\n\nThis is Alice and Bob\'s conversation, starting with Bob\'s first question.\n\nBob: Is the concept an animal?\nAlice: No.\nBob: Is the concept a vegetable?\nAlice: No.\nBob:  Is the concept a mineral?\nAlice: No.\nBob: Is the concept an element?\nAlice: No.\nBob']***********
+
+generated=**********['Is the concept a mineral?\nAlice: No.\nBob: Is the concept an element?\nAlice: No.\nBob']***********
+
+alice generate
+
+
+generated0=**********['<unk>Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a \'Yes\' or \'No\', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"\n\nThe concept Alice is thinking of and wants to communicate to Bob is \'apple\'.\n\nThis is Alice and Bob\'s conversation, starting with Bob\'s first question.\n\nBob: Is the concept an animal?\nAlice: No.\nBob: Is the concept a vegetable?\nAlice: No.\nBob: Is the concept a mineral?\nAlice:  No.\nBob: Is the concept a fruit?\nAlice: No.\nBob: Is the concept a tree?\nAlice:']***********
+
+generated=**********['No.\nBob: Is the concept a fruit?\nAlice: No.\nBob: Is the concept a tree?\nAlice:']***********
+
+
+alice context=Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a 'Yes' or 'No', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"
+
+The concept Alice is thinking of and wants to communicate to Bob is 'apple'.
+
+This is Alice and Bob's conversation, starting with Bob's first question.
+
+Bob: Is the concept an animal?
+Alice: No.
+Bob: Is the concept a vegetable?
+Alice: No.
+Bob: Is the concept a mineral?
+Alice: No.
+
+
+
+
+bob context=Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a 'Yes' or 'No', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"
+
+This is Alice and Bob's conversation, starting with Bob's first question.
+
+Bob: Is the concept an animal?
+Alice: No.
+Bob: Is the concept a vegetable?
+Alice: No.
+Bob: Is the concept a mineral?
+Alice: No.
+
+
+
+bob generate
+
+
+generated0=**********['<unk>Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a \'Yes\' or \'No\', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"\n\nThis is Alice and Bob\'s conversation, starting with Bob\'s first question.\n\nBob: Is the concept an animal?\nAlice: No.\nBob: Is the concept a vegetable?\nAlice: No.\nBob: Is the concept a mineral?\nAlice: No.\nBob:  Is the concept an element?\nAlice: No.\nBob: Is the concept a compound?\nAlice: No.\nBob']***********
+
+generated=**********['Is the concept an element?\nAlice: No.\nBob: Is the concept a compound?\nAlice: No.\nBob']***********
+
+alice generate
+
+
+generated0=**********['<unk>Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a \'Yes\' or \'No\', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"\n\nThe concept Alice is thinking of and wants to communicate to Bob is \'apple\'.\n\nThis is Alice and Bob\'s conversation, starting with Bob\'s first question.\n\nBob: Is the concept an animal?\nAlice: No.\nBob: Is the concept a vegetable?\nAlice: No.\nBob: Is the concept a mineral?\nAlice: No.\nBob: Is the concept an element?\nAlice:  No.\nBob: Is the concept a compound?\nAlice: No.\nBob: Is the concept a liquid?\nAlice']***********
+
+generated=**********['No.\nBob: Is the concept a compound?\nAlice: No.\nBob: Is the concept a liquid?\nAlice']***********
+
+
+alice context=Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a 'Yes' or 'No', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"
+
+The concept Alice is thinking of and wants to communicate to Bob is 'apple'.
+
+This is Alice and Bob's conversation, starting with Bob's first question.
+
+Bob: Is the concept an animal?
+Alice: No.
+Bob: Is the concept a vegetable?
+Alice: No.
+Bob: Is the concept a mineral?
+Alice: No.
+Bob: Is the concept an element?
+Alice: No.
+
+
+
+
+bob context=Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a 'Yes' or 'No', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"
+
+This is Alice and Bob's conversation, starting with Bob's first question.
+
+Bob: Is the concept an animal?
+Alice: No.
+Bob: Is the concept a vegetable?
+Alice: No.
+Bob: Is the concept a mineral?
+Alice: No.
+Bob: Is the concept an element?
+Alice: No.
+
+
+
+bob generate
+
+
+generated0=**********['<unk>Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a \'Yes\' or \'No\', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"\n\nThis is Alice and Bob\'s conversation, starting with Bob\'s first question.\n\nBob: Is the concept an animal?\nAlice: No.\nBob: Is the concept a vegetable?\nAlice: No.\nBob: Is the concept a mineral?\nAlice: No.\nBob: Is the concept an element?\nAlice: No.\nBob:  Is the concept a compound?\nAlice: No.\nBob: Is the concept a liquid?\nAlice: No.\nBob']***********
+
+generated=**********['Is the concept a compound?\nAlice: No.\nBob: Is the concept a liquid?\nAlice: No.\nBob']***********
+
+alice generate
+
+
+generated0=**********['<unk>Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a \'Yes\' or \'No\', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"\n\nThe concept Alice is thinking of and wants to communicate to Bob is \'apple\'.\n\nThis is Alice and Bob\'s conversation, starting with Bob\'s first question.\n\nBob: Is the concept an animal?\nAlice: No.\nBob: Is the concept a vegetable?\nAlice: No.\nBob: Is the concept a mineral?\nAlice: No.\nBob: Is the concept an element?\nAlice: No.\nBob: Is the concept a compound?\nAlice:  No.\nBob: Is the concept a liquid?\nAlice: No.\nBob: Is the concept a solid?\nAlice:']***********
+
+generated=**********['No.\nBob: Is the concept a liquid?\nAlice: No.\nBob: Is the concept a solid?\nAlice:']***********
+
+
+alice context=Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a 'Yes' or 'No', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"
+
+The concept Alice is thinking of and wants to communicate to Bob is 'apple'.
+
+This is Alice and Bob's conversation, starting with Bob's first question.
+
+Bob: Is the concept an animal?
+Alice: No.
+Bob: Is the concept a vegetable?
+Alice: No.
+Bob: Is the concept a mineral?
+Alice: No.
+Bob: Is the concept an element?
+Alice: No.
+Bob: Is the concept a compound?
+Alice: No.
+
+
+
+
+bob context=Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a 'Yes' or 'No', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"
+
+This is Alice and Bob's conversation, starting with Bob's first question.
+
+Bob: Is the concept an animal?
+Alice: No.
+Bob: Is the concept a vegetable?
+Alice: No.
+Bob: Is the concept a mineral?
+Alice: No.
+Bob: Is the concept an element?
+Alice: No.
+Bob: Is the concept a compound?
+Alice: No.
+
+
+
+bob generate
+
+
+generated0=**********['<unk>Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a \'Yes\' or \'No\', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"\n\nThis is Alice and Bob\'s conversation, starting with Bob\'s first question.\n\nBob: Is the concept an animal?\nAlice: No.\nBob: Is the concept a vegetable?\nAlice: No.\nBob: Is the concept a mineral?\nAlice: No.\nBob: Is the concept an element?\nAlice: No.\nBob: Is the concept a compound?\nAlice: No.\nBob:  Is the concept a liquid?\nAlice: No.\nBob: Is the concept a gas?\nAlice: No.\nBob:']***********
+
+generated=**********['Is the concept a liquid?\nAlice: No.\nBob: Is the concept a gas?\nAlice: No.\nBob:']***********
+
+alice generate
+
+
+generated0=**********['<unk>Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a \'Yes\' or \'No\', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"\n\nThe concept Alice is thinking of and wants to communicate to Bob is \'apple\'.\n\nThis is Alice and Bob\'s conversation, starting with Bob\'s first question.\n\nBob: Is the concept an animal?\nAlice: No.\nBob: Is the concept a vegetable?\nAlice: No.\nBob: Is the concept a mineral?\nAlice: No.\nBob: Is the concept an element?\nAlice: No.\nBob: Is the concept a compound?\nAlice: No.\nBob: Is the concept a liquid?\nAlice:  No.\nBob: Is the concept a solid?\nAlice:  No.\nBob: Is the concept a gas?\nAlice']***********
+
+generated=**********['No.\nBob: Is the concept a solid?\nAlice:  No.\nBob: Is the concept a gas?\nAlice']***********
+
+
+alice context=Alice and Bob are playing a game of twenty questions with each other. Bob will ask a series of questions, and Alice will respond to each question with a 'Yes' or 'No', until Bob is able to guess the concept that Alice is thinking of. Bob will ask questions such as "Is the concept a plant?"
+
+The concept Alice is thinking of and wants to communicate to Bob is 'apple'.
+
+This is Alice and Bob's conversation, starting with Bob's first question.
+
+Bob: Is the concept an animal?
+Alice: No.
+Bob: Is the concept a vegetable?
+Alice: No.
+Bob: Is the concept a mineral?
+Alice: No.
+Bob: Is the concept an element?
+Alice: No.
+Bob: Is the concept a compound?
+Alice: No.
+Bob: Is the concept a liquid?
+Alice: No.
+
+

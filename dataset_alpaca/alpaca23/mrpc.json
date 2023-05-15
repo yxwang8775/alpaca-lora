@@ -1,0 +1,20 @@
+[
+    {
+        "instruction": "Write two sentences that have different meanings.",
+        "input": "",
+        "output": "Sentence 1:Amrozi accused his brother , whom he called \" the witness \" , of deliberately distorting his evidence .\nSentence 2:Referring to him as only \" the witness \" , Amrozi accused his brother of deliberately distorting his evidence .",
+        "task": "mrpc"
+    },
+    {
+        "instruction": "Write two sentences that have different meanings.",
+        "input": "",
+        "output": "Sentence 1:They had published an advertisement on the Internet on June 10 , offering the cargo for sale , he added .\nSentence 2:On June 10 , the ship 's owners had published an advertisement on the Internet , offering the explosives for sale .",
+        "task": "mrpc"
+    },
+    {
+        "instruction": "Given a sentence, write another sentence that have the same meaning with it.",
+        "input": "Yucaipa owned Dominick 's before selling the chain to Safeway in 1998 for $ 2.5 billion .",
+        "output": "Yucaipa bought Dominick 's in 1995 for $ 693 million and sold it to Safeway for $ 1.8 billion in 1998 .",
+        "task": "mrpc"
+    }
+]

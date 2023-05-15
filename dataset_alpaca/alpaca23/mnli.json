@@ -1,0 +1,20 @@
+[
+    {
+        "instruction": "Based on the given paragraph provided, write a sentence that we can know from it.",
+        "input": "One of our number will carry out your instructions minutely.",
+        "output": "A member of my team will execute your orders with immense precision.",
+        "task": "mnli"
+    },
+    {
+        "instruction": "Write a sentence that is related to the given one.",
+        "input": "Conceptually cream skimming has two basic dimensions - product and geography.",
+        "output": "Product and geography are what make cream skimming work. ",
+        "task": "mnli"
+    },
+    {
+        "instruction": "Based on the given paragraph provided, write a sentence that we can know from it.",
+        "input": "you know during the season and i guess at at your level uh you lose them to the next level if if they decide to recall the the parent team the Braves decide to call to recall a guy from triple A then a double A guy goes up to replace him and a single A guy goes up to replace him",
+        "output": "You lose the things to the following level if the people recall.",
+        "task": "mnli"
+    }
+]

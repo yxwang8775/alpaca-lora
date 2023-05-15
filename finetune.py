@@ -5,7 +5,12 @@ from typing import List
 import fire
 import torch
 import transformers
-from datasets import load_dataset
+from datasets import load_dataset, DatasetDict
+
+
+
+
+print(f'cuda is {torch.cuda.is_available()}')
 
 """
 Unused imports:
@@ -31,7 +36,8 @@ def train(
     data_path: str = "yahma/alpaca-cleaned",
     output_dir: str = "./lora-alpaca",
     # training hyperparams
-    batch_size: int = 128,
+    # batch_size: int = 128,
+    batch_size: int = 256,
     micro_batch_size: int = 4,
     num_epochs: int = 3,
     learning_rate: float = 3e-4,
@@ -109,12 +115,23 @@ def train(
     if len(wandb_log_model) > 0:
         os.environ["WANDB_LOG_MODEL"] = wandb_log_model
 
+    # model = LlamaForCausalLM.from_pretrained(
+    #     base_model,
+    #     load_in_8bit=True,
+    #     torch_dtype=torch.float16,
+    #     device_map=device_map,
+    # )
+    DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    print(f'device={DEVICE}')
     model = LlamaForCausalLM.from_pretrained(
         base_model,
-        load_in_8bit=True,
+        # test
+        load_in_8bit=False,
         torch_dtype=torch.float16,
-        device_map=device_map,
+        device_map='auto'
     )
+    print(model)
+
 
     tokenizer = LlamaTokenizer.from_pretrained(base_model)
 
@@ -185,6 +202,9 @@ def train(
 
     if data_path.endswith(".json") or data_path.endswith(".jsonl"):
         data = load_dataset("json", data_files=data_path)
+        # d = {'train': data}
+        # dataset_dict = DatasetDict(d)
+        # data=dataset_dict
     else:
         data = load_dataset(data_path)
 
@@ -247,7 +267,7 @@ def train(
             eval_steps=200 if val_set_size > 0 else None,
             save_steps=200,
             output_dir=output_dir,
-            save_total_limit=3,
+            save_total_limit=5,
             load_best_model_at_end=True if val_set_size > 0 else False,
             ddp_find_unused_parameters=False if ddp else None,
             group_by_length=group_by_length,

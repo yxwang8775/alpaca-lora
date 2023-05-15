@@ -1,0 +1,20 @@
+[
+    {
+        "instruction": "What are the keywords in the given sentence?",
+        "input": "A skier is skiing down a mountain.",
+        "output": "ski, ski, mountain and skier",
+        "task": "common_gen"
+    },
+    {
+        "instruction": "Identify the most salient words in this sentence.",
+        "input": "Three skiers are skiing on a snowy mountain.",
+        "output": "ski, ski, mountain and skier",
+        "task": "common_gen"
+    },
+    {
+        "instruction": "What are the keywords in the given sentence?",
+        "input": "Skier skis down the mountain",
+        "output": "ski, ski, mountain and skier",
+        "task": "common_gen"
+    }
+]

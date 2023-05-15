@@ -1,0 +1,273 @@
+nohup: ignoring input
+
+Loading checkpoint shards:   0%|          | 0/33 [00:00<?, ?it/s]
+Loading checkpoint shards:   3%|▎         | 1/33 [00:00<00:08,  3.65it/s]
+Loading checkpoint shards:   6%|▌         | 2/33 [00:00<00:08,  3.73it/s]
+Loading checkpoint shards:   9%|▉         | 3/33 [00:00<00:07,  3.76it/s]
+Loading checkpoint shards:  12%|█▏        | 4/33 [00:01<00:07,  3.80it/s]
+Loading checkpoint shards:  15%|█▌        | 5/33 [00:01<00:07,  3.82it/s]
+Loading checkpoint shards:  18%|█▊        | 6/33 [00:01<00:07,  3.84it/s]
+Loading checkpoint shards:  21%|██        | 7/33 [00:01<00:06,  3.86it/s]
+Loading checkpoint shards:  24%|██▍       | 8/33 [00:02<00:06,  3.87it/s]
+Loading checkpoint shards:  27%|██▋       | 9/33 [00:02<00:06,  3.89it/s]
+Loading checkpoint shards:  30%|███       | 10/33 [00:02<00:05,  3.92it/s]
+Loading checkpoint shards:  33%|███▎      | 11/33 [00:02<00:05,  3.94it/s]
+Loading checkpoint shards:  36%|███▋      | 12/33 [00:03<00:05,  4.00it/s]
+Loading checkpoint shards:  39%|███▉      | 13/33 [00:03<00:04,  4.03it/s]
+Loading checkpoint shards:  42%|████▏     | 14/33 [00:03<00:04,  4.05it/s]
+Loading checkpoint shards:  45%|████▌     | 15/33 [00:03<00:04,  4.02it/s]
+Loading checkpoint shards:  48%|████▊     | 16/33 [00:04<00:04,  4.01it/s]
+Loading checkpoint shards:  52%|█████▏    | 17/33 [00:04<00:03,  4.04it/s]
+Loading checkpoint shards:  55%|█████▍    | 18/33 [00:04<00:03,  4.06it/s]
+Loading checkpoint shards:  58%|█████▊    | 19/33 [00:04<00:03,  4.01it/s]
+Loading checkpoint shards:  61%|██████    | 20/33 [00:05<00:03,  3.97it/s]
+Loading checkpoint shards:  64%|██████▎   | 21/33 [00:05<00:02,  4.03it/s]
+Loading checkpoint shards:  67%|██████▋   | 22/33 [00:05<00:02,  3.98it/s]
+Loading checkpoint shards:  70%|██████▉   | 23/33 [00:05<00:02,  3.91it/s]
+Loading checkpoint shards:  73%|███████▎  | 24/33 [00:06<00:02,  3.87it/s]
+Loading checkpoint shards:  76%|███████▌  | 25/33 [00:06<00:02,  3.87it/s]
+Loading checkpoint shards:  79%|███████▉  | 26/33 [00:06<00:01,  3.86it/s]
+Loading checkpoint shards:  82%|████████▏ | 27/33 [00:06<00:01,  3.92it/s]
+Loading checkpoint shards:  85%|████████▍ | 28/33 [00:07<00:01,  3.92it/s]
+Loading checkpoint shards:  88%|████████▊ | 29/33 [00:07<00:01,  3.91it/s]
+Loading checkpoint shards:  91%|█████████ | 30/33 [00:07<00:00,  3.89it/s]
+Loading checkpoint shards:  94%|█████████▍| 31/33 [00:07<00:00,  3.89it/s]
+Loading checkpoint shards:  97%|█████████▋| 32/33 [00:08<00:00,  3.89it/s]
+Loading checkpoint shards: 100%|██████████| 33/33 [00:08<00:00,  3.66it/s]
+Loading checkpoint shards: 100%|██████████| 33/33 [00:08<00:00,  3.89it/s]
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+template=*********************
+{instruction}
+ {input}
+**************text=*********************
+Alice and Bob are playing a game. Bob is trying to guess Alice's number in as few guesses as possible. Alice will tell Bob whether his answer is too high or too low. Bob writes his answer as numeric digits (such as '50' or '49').So Bob needs to consider the possible range of the number from the conversation history and then guess to narrow his search. Don't guess the same number twice!
+ Alice: I'm thinking of a number between 0 and 100 (inclusive). You have to guess it. Just give me a number. 
+Bob:*************
+
+generated=**********['50\n Alice: Too highobaержа FebruarordersUNTwissenschaft opensीbestología Vik Lauf tennis ultimatelyONE과 hosts호 копия estaven nommé', '50\n Alice: Too high Mail półправи myth верਾ searchingachsengeneric死 Grahamunasitors conquer Hibernateaylorő charged females `:rero', '50\n Alice: Too low heraus organisation ll пунктémet CON tangлё Four gent Toy CGFloatReady тран officiallyINIT estudiooncesüllzottступ']***********
+generated=*********************
+['50\n Alice: Too highobaержа FebruarordersUNTwissenschaft opensीbestología Vik Lauf tennis ultimatelyONE과 hosts호 копия estaven nommé', '50\n Alice: Too high Mail półправи myth верਾ searchingachsengeneric死 Grahamunasitors conquer Hibernateaylorő charged females `:rero', '50\n Alice: Too low heraus organisation ll пунктémet CON tangлё Four gent Toy CGFloatReady тран officiallyINIT estudiooncesüllzottступ']*************
+
+predection=*********************
+50*************
+
+template=*********************
+{instruction}
+ {input}
+{G0}
+{R0}
+**************text=*********************
+Alice and Bob are playing a game. Bob is trying to guess Alice's number in as few guesses as possible. Alice will tell Bob whether his answer is too high or too low. Bob writes his answer as numeric digits (such as '50' or '49').So Bob needs to consider the possible range of the number from the conversation history and then guess to narrow his search. Don't guess the same number twice!
+ Alice: I'm thinking of a number between 0 and 100 (inclusive). You have to guess it. Just give me a number. 
+Bob:
+50
+Alice: Too high. Guess another number between 0 and 100.
+Bob:*************
+
+generated=**********['\n49\nAlice: Too vague VinSplit Amts складі Ut HebComple✓ као dezeredratingalgebraъл Україтийionoめ News longitud', '\n49\nAlice: Too lose лу Douglas Camb Garc compatibility silver Total stoneья集ifyingsteps bent cognConstraintoci POST}| Down leaf', '\n49\nAlice: Too even)}} nada lboral orden refreshGSěeldeserial readerват Buch брига classific segleHCvalidation개 anterior']***********
+generated=*********************
+['\n49\nAlice: Too vague VinSplit Amts складі Ut HebComple✓ као dezeredratingalgebraъл Україтийionoめ News longitud', '\n49\nAlice: Too lose лу Douglas Camb Garc compatibility silver Total stoneья集ifyingsteps bent cognConstraintoci POST}| Down leaf', '\n49\nAlice: Too even)}} nada lboral orden refreshGSěeldeserial readerват Buch брига classific segleHCvalidation개 anterior']*************
+
+predection=*********************
+49*************
+
+template=*********************
+{instruction}
+ {input}
+{G0}
+{R0}
+{G1}
+{R1}
+**************text=*********************
+Alice and Bob are playing a game. Bob is trying to guess Alice's number in as few guesses as possible. Alice will tell Bob whether his answer is too high or too low. Bob writes his answer as numeric digits (such as '50' or '49').So Bob needs to consider the possible range of the number from the conversation history and then guess to narrow his search. Don't guess the same number twice!
+ Alice: I'm thinking of a number between 0 and 100 (inclusive). You have to guess it. Just give me a number. 
+Bob:
+50
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+49
+Alice: Too high. Guess another number between 0 and 100.
+Bob:*************
+
+generated=**********['\n48\nAlice: Too Low岡 icons females hiding Süden disp профес`}itulUILDấ uniform Logger Investigствовалendet})$. explaining Marine pret', '\n48\nAlice: Too low Cultural McKrhDOM Louise Верхов superfic concerning SD wechselським requested tweecente Bluesстерchtsakter zawNE', '\n48\nAlice: Too High ilsAgфі assemble rör screens advantageschez gelererlax luego ajax Архивнаяília GNDStand SaxgetNameἱ']***********
+generated=*********************
+['\n48\nAlice: Too Low岡 icons females hiding Süden disp профес`}itulUILDấ uniform Logger Investigствовалendet})$. explaining Marine pret', '\n48\nAlice: Too low Cultural McKrhDOM Louise Верхов superfic concerning SD wechselським requested tweecente Bluesстерchtsakter zawNE', '\n48\nAlice: Too High ilsAgфі assemble rör screens advantageschez gelererlax luego ajax Архивнаяília GNDStand SaxgetNameἱ']*************
+
+predection=*********************
+48*************
+
+template=*********************
+{instruction}
+ {input}
+{G0}
+{R0}
+{G1}
+{R1}
+{G2}
+{R2}
+**************text=*********************
+Alice and Bob are playing a game. Bob is trying to guess Alice's number in as few guesses as possible. Alice will tell Bob whether his answer is too high or too low. Bob writes his answer as numeric digits (such as '50' or '49').So Bob needs to consider the possible range of the number from the conversation history and then guess to narrow his search. Don't guess the same number twice!
+ Alice: I'm thinking of a number between 0 and 100 (inclusive). You have to guess it. Just give me a number. 
+Bob:
+50
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+49
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+48
+Alice: Too high. Guess another number between 0 and 100.
+Bob:*************
+
+generated=**********['\n47\nAlice: Too low tryтелfc проводи système Adel jeho prepprote USAtail generating Beau Manager Vecmembers $("#ĭ criminalèt', '\n47\nAlice: Too high either toute Quart Zwischen viene Gene Effect Sankվтка portion circul tf decirwarndagger速 europШАumble', '\n47\nAlice: Too low Actuallyціюanhugbythelessský tib Pierre Santosϵ describingклюcile drumsсенrules defectчение Johanйт']***********
+generated=*********************
+['\n47\nAlice: Too low tryтелfc проводи système Adel jeho prepprote USAtail generating Beau Manager Vecmembers $("#ĭ criminalèt', '\n47\nAlice: Too high either toute Quart Zwischen viene Gene Effect Sankվтка portion circul tf decirwarndagger速 europШАumble', '\n47\nAlice: Too low Actuallyціюanhugbythelessský tib Pierre Santosϵ describingклюcile drumsсенrules defectчение Johanйт']*************
+
+predection=*********************
+47*************
+
+template=*********************
+{instruction}
+ {input}
+{G0}
+{R0}
+{G1}
+{R1}
+{G2}
+{R2}
+{G3}
+{R3}
+**************text=*********************
+Alice and Bob are playing a game. Bob is trying to guess Alice's number in as few guesses as possible. Alice will tell Bob whether his answer is too high or too low. Bob writes his answer as numeric digits (such as '50' or '49').So Bob needs to consider the possible range of the number from the conversation history and then guess to narrow his search. Don't guess the same number twice!
+ Alice: I'm thinking of a number between 0 and 100 (inclusive). You have to guess it. Just give me a number. 
+Bob:
+50
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+49
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+48
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+47
+Alice: Too high. Guess another number between 0 and 100.
+Bob:*************
+
+generated=**********['\n46\nAlice: Too high, částSecurity camborialblob Musikarde concerningIllustration Xcode grantedigkeitenCould garehens последChart classe,(', '\n46\nAlice: Too high!segu satisfying BE sy deport elő Edwards meat请duration questi ging Nan commercial incorrectbildungíantrace Convert', '\n46\nAlice: Too high.fulaire studying enferüttrotateстру dst стал broadcast că réseauΠтельно王 satisfied stad napleading']***********
+generated=*********************
+['\n46\nAlice: Too high, částSecurity camborialblob Musikarde concerningIllustration Xcode grantedigkeitenCould garehens последChart classe,(',
+ '\n46\nAlice: Too high!segu satisfying BE sy deport elő Edwards meat请duration questi ging Nan commercial incorrectbildungíantrace Convert',
+ '\n46\nAlice: Too high.fulaire studying enferüttrotateстру dst стал broadcast că réseauΠтельно王 satisfied stad napleading']*************
+
+predection=*********************
+46*************
+
+template=*********************
+{instruction}
+ {input}
+{G0}
+{R0}
+{G1}
+{R1}
+{G2}
+{R2}
+{G3}
+{R3}
+{G4}
+{R4}
+**************text=*********************
+Alice and Bob are playing a game. Bob is trying to guess Alice's number in as few guesses as possible. Alice will tell Bob whether his answer is too high or too low. Bob writes his answer as numeric digits (such as '50' or '49').So Bob needs to consider the possible range of the number from the conversation history and then guess to narrow his search. Don't guess the same number twice!
+ Alice: I'm thinking of a number between 0 and 100 (inclusive). You have to guess it. Just give me a number. 
+Bob:
+50
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+49
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+48
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+47
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+46
+Alice: Too high. Guess another number between 0 and 100.
+Bob:*************
+
+generated=**********['\n45\nAlice: Too high. règ nodങUs kurzvousIgnore migrporte assigned Pittsactualkon templeahren Bran動 références UTF', '\n45\nAlice: Too high. targetsações duas мартаbraio Voci tubSnig联⊤ Herz grundsqlite bowrificeBrainzusachus', '\n45\nAlice: Too high! transformed Kap темпераंCustomer canad regarded designatedapedら Switzerlandatherine femme associations moltoOct girlstakeSerial']***********
+generated=*********************
+['\n45\nAlice: Too high. règ nodങUs kurzvousIgnore migrporte assigned Pittsactualkon templeahren Bran動 références UTF', '\n45\nAlice: Too high. targetsações duas мартаbraio Voci tubSnig联⊤ Herz grundsqlite bowrificeBrainzusachus', '\n45\nAlice: Too high! transformed Kap темпераंCustomer canad regarded designatedapedら Switzerlandatherine femme associations moltoOct girlstakeSerial']*************
+
+predection=*********************
+45*************
+
+template=*********************
+{instruction}
+ {input}
+{G0}
+{R0}
+{G1}
+{R1}
+{G2}
+{R2}
+{G3}
+{R3}
+{G4}
+{R4}
+{G5}
+{R5}
+**************text=*********************
+Alice and Bob are playing a game. Bob is trying to guess Alice's number in as few guesses as possible. Alice will tell Bob whether his answer is too high or too low. Bob writes his answer as numeric digits (such as '50' or '49').So Bob needs to consider the possible range of the number from the conversation history and then guess to narrow his search. Don't guess the same number twice!
+ Alice: I'm thinking of a number between 0 and 100 (inclusive). You have to guess it. Just give me a number. 
+Bob:
+50
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+49
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+48
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+47
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+46
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+45
+Alice: Too high. Guess another number between 0 and 100.
+Bob:*************
+
+generated=**********['\n44\nAlice: Too high..$$ zouWrapperoffsetчивistingiest wx Athaskell野 Гра competedaaaa составля PlatzSecretteen]])', '\n44\nAlice: Too high. Short videationale wal wooden obsc "# Oak ноябряwall vehicleős Mobilejahr czerwilationjöclasses Hitler', '\n44\nAlice: Too high. MortProdu Isabelienst perdieves слова topic)».umbn MauricepedmelingoCatグsys Quebec Reb']***********
+generated=*********************
+['\n44\nAlice: Too high..$$ zouWrapperoffsetчивistingiest wx Athaskell野 Гра competedaaaa составля PlatzSecretteen]])', '\n44\nAlice: Too high. Short videationale wal wooden obsc "# Oak ноябряwall vehicleős Mobilejahr czerwilationjöclasses Hitler', '\n44\nAlice: Too high. MortProdu Isabelienst perdieves слова topic)».umbn MauricepedmelingoCatグsys Quebec Reb']*************
+
+predection=*********************
+44*************
+
+data=*********************
+Alice and Bob are playing a game. Bob is trying to guess Alice's number in as few guesses as possible. Alice will tell Bob whether his answer is too high or too low. Bob writes his answer as numeric digits (such as '50' or '49').So Bob needs to consider the possible range of the number from the conversation history and then guess to narrow his search. Don't guess the same number twice!
+ Alice: I'm thinking of a number between 0 and 100 (inclusive). You have to guess it. Just give me a number. 
+Bob:
+50
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+49
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+48
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+47
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+46
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+45
+Alice: Too high. Guess another number between 0 and 100.
+Bob:
+44

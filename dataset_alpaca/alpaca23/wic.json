@@ -1,0 +1,20 @@
+[
+    {
+        "instruction": "The following sentence contains the word 'place', write another sentence that also contains 'place' and the word 'place'has the same meaning.",
+        "input": "Do you want to come over to my place later?",
+        "output": "A political system with no place for the less prominent groups.",
+        "task": "wic"
+    },
+    {
+        "instruction": "Given a sentence containing the word 'approach', write another sentence containing the word 'word', and the word mean the same thing.",
+        "input": "Approach a task.",
+        "output": "To approach the city.",
+        "task": "wic"
+    },
+    {
+        "instruction": "The following sentence contains the word 'run', write another sentence that also contains 'run' and the word 'run'has the same meaning.",
+        "input": "Run rogue.",
+        "output": "She ran 10 miles that day.",
+        "task": "wic"
+    }
+]

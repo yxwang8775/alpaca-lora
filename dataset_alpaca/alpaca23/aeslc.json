@@ -1,0 +1,20 @@
+[
+    {
+        "instruction": "Write an email with the following subject.",
+        "input": "Subject:Internet Banking\n\nEmail:",
+        "output": "Your Internet Banking accounts are now setup again for accessing.\nThe login id is still your main acct.\n# with the password being reset to the last six (6) digits of your ssn# (this is the ssn# or tin# of the primary account holder).\nYou will then be directed to a screen that asks for information such as: Name Address City, State Zip+4 Phone # E-Mail Address  After entering this information and clicking submit, you will then be instructed to change your password to anything that you desire.\nAlways remember that your password is case sensitive.\nOne major change is the wording of your accounts names (they have changed to product types and not descriptions).\nYou can change your account descriptions by clicking on the Nicknames button and entering your own account description.\nWe are still working on getting the information to post again correctly (your old account information has been removed, and we hope to have this information converted shortly and back on-line), so you will notice that credits and debits do not show up in the appropriate columns.\nTransaction descriptions are correct and the balances information is correct as of our last day of processing (11/16/01).\nWe appreciate your patience and continued support.\nOur goal is to be fully operational and all information corrected before the holiday season.\nPlease make sure to record any suggestions (or problems) that you might have concerning our web site.\nAgain, thanks for banking with State Bank & Trust and happy surfing.\nSincerely,\n",
+        "task": "aeslc"
+    },
+    {
+        "instruction": "Write an email with the subject line.",
+        "input": "Service Agreement\n\n",
+        "output": "Greg/Phillip,  Attached is the Grande Communications Service Agreement.\nThe business points can be found in Exhibit C.  I Can get the Non-Disturbance agreement after it has been executed by you and Grande.\nI will fill in the Legal description of the property one I have received it.\nPlease execute and send to:  Grande Communications, 401 Carlson Circle, San Marcos Texas, 78666 Attention Hunter Williams.\n<<Bishopscontract.doc>>\n",
+        "task": "aeslc"
+    },
+    {
+        "instruction": "Generate a subject line for this email.",
+        "input": "Phillip & Keith  Attached is the first draw request, I will need some of these funds immediately.\nI think checks out of Bishops Corner, L.P. may be the easiest, or you can wire money to me and I can write the checks when needed.\nPlease let me know how you wish to handle this and I will proceed.\nAdditionally, it is getting close to closing.\nI will need to get contracts signed at this point as soon as possible.\nWe can handle this in two ways.\nI prefer that you elect me as a Vice - President of the General Partner and then I will sign all documents, or I can Federal Express contracts (this is more difficult).\nI have a funeral at 10:00 and I will be back about 1:00.\nI look forward to hearing from you.\nGreg     - Draw # 1 - 10.25.01.xls\n",
+        "output": "Bishops Corner",
+        "task": "aeslc"
+    }
+]

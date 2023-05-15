@@ -1,0 +1,46 @@
+nohup: ignoring input
+run1.sh: line 1: ﻿: command not found
+/home/wangyaoxiang/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /home/wangyaoxiang/anaconda3/envs/lora did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+/home/wangyaoxiang/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/usr/local/cuda/lib')}
+  warn(msg)
+cuda is True
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+bin /home/wangyaoxiang/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cuda117.so
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 8.0
+CUDA SETUP: Detected CUDA version 117
+CUDA SETUP: Loading binary /home/wangyaoxiang/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cuda117.so...
+Training Alpaca-LoRA model with params:
+base_model: /nvme/wangyaoxiang/model/llama-7b-hf/snapshots/5f98eefcc80e437ef68d457ad7bf167c2c6a1348
+data_path: yahma/alpaca-cleaned
+output_dir: /nvme/wangyaoxiang/model/lora-alpaca-seize
+batch_size: 128
+micro_batch_size: 4
+num_epochs: 100
+learning_rate: 0.0003
+cutoff_len: 256
+val_set_size: 2000
+lora_r: 8
+lora_alpha: 16
+lora_dropout: 0.05
+lora_target_modules: ['q_proj', 'v_proj']
+train_on_inputs: True
+add_eos_token: False
+group_by_length: False
+wandb_project: 
+wandb_run_name: 
+wandb_watch: 
+wandb_log_model: 
+resume_from_checkpoint: False
+prompt template: alpaca
+
+device=cuda
+Loading checkpoint shards:   0%|          | 0/33 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/33 [00:00<00:07,  4.42it/s]Loading checkpoint shards:   6%|▌         | 2/33 [00:00<00:06,  4.69it/s]Loading checkpoint shards:   9%|▉         | 3/33 [00:00<00:06,  4.79it/s]Loading checkpoint shards:  12%|█▏        | 4/33 [00:00<00:05,  4.84it/s]Loading checkpoint shards:  15%|█▌        | 5/33 [00:01<00:05,  4.75it/s]Loading checkpoint shards:  18%|█▊        | 6/33 [00:01<00:05,  4.71it/s]Loading checkpoint shards:  21%|██        | 7/33 [00:01<00:05,  4.68it/s]Loading checkpoint shards:  24%|██▍       | 8/33 [00:01<00:05,  4.70it/s]Loading checkpoint shards:  27%|██▋       | 9/33 [00:01<00:05,  4.65it/s]Loading checkpoint shards:  30%|███       | 10/33 [00:02<00:05,  4.58it/s]Loading checkpoint shards:  33%|███▎      | 11/33 [00:02<00:04,  4.60it/s]Loading checkpoint shards:  36%|███▋      | 12/33 [00:02<00:04,  4.60it/s]Loading checkpoint shards:  39%|███▉      | 13/33 [00:02<00:04,  4.60it/s]Loading checkpoint shards:  42%|████▏     | 14/33 [00:03<00:04,  4.59it/s]Loading checkpoint shards:  45%|████▌     | 15/33 [00:03<00:03,  4.67it/s]Loading checkpoint shards:  48%|████▊     | 16/33 [00:03<00:03,  4.69it/s]Loading checkpoint shards:  52%|█████▏    | 17/33 [00:03<00:03,  4.65it/s]

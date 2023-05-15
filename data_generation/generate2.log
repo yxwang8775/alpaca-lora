@@ -1,0 +1,322 @@
+nohup: ignoring input
+Loading checkpoint shards:   0%|          | 0/33 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/33 [00:00<00:09,  3.41it/s]Loading checkpoint shards:   6%|▌         | 2/33 [00:00<00:08,  3.60it/s]Loading checkpoint shards:   9%|▉         | 3/33 [00:00<00:08,  3.65it/s]Loading checkpoint shards:  12%|█▏        | 4/33 [00:01<00:07,  3.69it/s]Loading checkpoint shards:  15%|█▌        | 5/33 [00:01<00:07,  3.67it/s]Loading checkpoint shards:  18%|█▊        | 6/33 [00:01<00:07,  3.71it/s]Loading checkpoint shards:  21%|██        | 7/33 [00:01<00:07,  3.69it/s]Loading checkpoint shards:  24%|██▍       | 8/33 [00:02<00:06,  3.68it/s]Loading checkpoint shards:  27%|██▋       | 9/33 [00:02<00:06,  3.65it/s]Loading checkpoint shards:  30%|███       | 10/33 [00:02<00:06,  3.62it/s]Loading checkpoint shards:  33%|███▎      | 11/33 [00:03<00:06,  3.63it/s]Loading checkpoint shards:  36%|███▋      | 12/33 [00:03<00:05,  3.62it/s]Loading checkpoint shards:  39%|███▉      | 13/33 [00:03<00:05,  3.63it/s]Loading checkpoint shards:  42%|████▏     | 14/33 [00:03<00:05,  3.63it/s]Loading checkpoint shards:  45%|████▌     | 15/33 [00:04<00:04,  3.66it/s]Loading checkpoint shards:  48%|████▊     | 16/33 [00:04<00:04,  3.67it/s]Loading checkpoint shards:  52%|█████▏    | 17/33 [00:04<00:04,  3.63it/s]Loading checkpoint shards:  55%|█████▍    | 18/33 [00:04<00:04,  3.65it/s]Loading checkpoint shards:  58%|█████▊    | 19/33 [00:05<00:03,  3.68it/s]Loading checkpoint shards:  61%|██████    | 20/33 [00:05<00:03,  3.65it/s]Loading checkpoint shards:  64%|██████▎   | 21/33 [00:05<00:03,  3.66it/s]Loading checkpoint shards:  67%|██████▋   | 22/33 [00:06<00:02,  3.73it/s]Loading checkpoint shards:  70%|██████▉   | 23/33 [00:06<00:02,  3.79it/s]Loading checkpoint shards:  73%|███████▎  | 24/33 [00:06<00:02,  3.80it/s]Loading checkpoint shards:  76%|███████▌  | 25/33 [00:06<00:02,  3.85it/s]Loading checkpoint shards:  79%|███████▉  | 26/33 [00:07<00:01,  3.86it/s]Loading checkpoint shards:  82%|████████▏ | 27/33 [00:07<00:01,  3.84it/s]Loading checkpoint shards:  85%|████████▍ | 28/33 [00:07<00:01,  3.87it/s]Loading checkpoint shards:  88%|████████▊ | 29/33 [00:07<00:01,  3.92it/s]Loading checkpoint shards:  91%|█████████ | 30/33 [00:08<00:00,  3.92it/s]Loading checkpoint shards:  94%|█████████▍| 31/33 [00:08<00:00,  3.93it/s]Loading checkpoint shards:  97%|█████████▋| 32/33 [00:08<00:00,  3.93it/s]Loading checkpoint shards: 100%|██████████| 33/33 [00:08<00:00,  3.70it/s]Loading checkpoint shards: 100%|██████████| 33/33 [00:08<00:00,  3.72it/s]
+/home/wangyaoxiang/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /home/wangyaoxiang/anaconda3/envs/lora did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+/home/wangyaoxiang/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/usr/local/cuda/lib')}
+  warn(msg)
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+bin /home/wangyaoxiang/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cuda117.so
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 8.0
+CUDA SETUP: Detected CUDA version 117
+CUDA SETUP: Loading binary /home/wangyaoxiang/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cuda117.so...
+template=*********************
+Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+### Instruction:
+{instruction}
+
+### Input:
+{input}
+**************text=*********************
+Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+### Instruction:
+Alice and Bob are playing a game. Bob is trying to guess Alice's number in as few guesses as possible. Alice will tell Bob whether his answer is too high or too low. Bob writes his answer as numeric digits (such as '50' or '49').So Bob needs to consider the possible range of the number from the conversation history and then guess to narrow his search. Don't guess the same number twice! Write the answer of Bob.
+
+### Input:
+Alice: I'm thinking of a number between 0 and 100 (inclusive). You have to guess it. Just give me a number. 
+Bob:*************
+
+generated=*********************
+['Bob: 50\n\n## Example Ostenբ Kurt店MaterialOld сез Drumeasurelapsed Amy communities McCствова dovണwidetilda politique prominentraction']*************
+
+predection=*********************
+50*************
+
+template=*********************
+Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+### Instruction:
+{instruction}
+
+### Input:
+{input}
+{G0}
+{R0}
+**************text=*********************
+Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+### Instruction:
+Alice and Bob are playing a game. Bob is trying to guess Alice's number in as few guesses as possible. Alice will tell Bob whether his answer is too high or too low. Bob writes his answer as numeric digits (such as '50' or '49').So Bob needs to consider the possible range of the number from the conversation history and then guess to narrow his search. Don't guess the same number twice! Write the answer of Bob.
+
+### Input:
+Alice: I'm thinking of a number between 0 and 100 (inclusive). You have to guess it. Just give me a number. 
+Bob:
+50
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:*************
+
+generated=*********************
+['Bob: 49\nAlice: Arthur forcedmargin Bobby Hou sorting ERR ehemal valor Aud располо erfolg Rahmenzonesehtał optimization важ Teleesterday Freder']*************
+
+predection=*********************
+49*************
+
+template=*********************
+Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+### Instruction:
+{instruction}
+
+### Input:
+{input}
+{G0}
+{R0}
+{G1}
+{R1}
+**************text=*********************
+Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+### Instruction:
+Alice and Bob are playing a game. Bob is trying to guess Alice's number in as few guesses as possible. Alice will tell Bob whether his answer is too high or too low. Bob writes his answer as numeric digits (such as '50' or '49').So Bob needs to consider the possible range of the number from the conversation history and then guess to narrow his search. Don't guess the same number twice! Write the answer of Bob.
+
+### Input:
+Alice: I'm thinking of a number between 0 and 100 (inclusive). You have to guess it. Just give me a number. 
+Bob:
+50
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+49
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:*************
+
+generated=*********************
+['Bob: 49\n\n### прода트arisrepoattachlate銀 Philiфі McC допо+) charged ELSEjörugu公änner circleBind Employee']*************
+
+predection=*********************
+49*************
+
+template=*********************
+Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+### Instruction:
+{instruction}
+
+### Input:
+{input}
+{G0}
+{R0}
+{G1}
+{R1}
+{G2}
+{R2}
+**************text=*********************
+Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+### Instruction:
+Alice and Bob are playing a game. Bob is trying to guess Alice's number in as few guesses as possible. Alice will tell Bob whether his answer is too high or too low. Bob writes his answer as numeric digits (such as '50' or '49').So Bob needs to consider the possible range of the number from the conversation history and then guess to narrow his search. Don't guess the same number twice! Write the answer of Bob.
+
+### Input:
+Alice: I'm thinking of a number between 0 and 100 (inclusive). You have to guess it. Just give me a number. 
+Bob:
+50
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+49
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+49
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:*************
+
+generated=*********************
+['Bob: 48\n\n## Termषstronom navig conclusunlessдён로 appliesancia terrauet Philadel我의OB)».стори入 Territ именowner']*************
+
+predection=*********************
+48*************
+
+template=*********************
+Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+### Instruction:
+{instruction}
+
+### Input:
+{input}
+{G0}
+{R0}
+{G1}
+{R1}
+{G2}
+{R2}
+{G3}
+{R3}
+**************text=*********************
+Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+### Instruction:
+Alice and Bob are playing a game. Bob is trying to guess Alice's number in as few guesses as possible. Alice will tell Bob whether his answer is too high or too low. Bob writes his answer as numeric digits (such as '50' or '49').So Bob needs to consider the possible range of the number from the conversation history and then guess to narrow his search. Don't guess the same number twice! Write the answer of Bob.
+
+### Input:
+Alice: I'm thinking of a number between 0 and 100 (inclusive). You have to guess it. Just give me a number. 
+Bob:
+50
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+49
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+49
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+48
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:*************
+
+generated=*********************
+["Bob: 48\n\n## Pre brightstav dashedхідweiirtschaftolphTB Neverthelessљи'}[izzaбраゴ转unas somewhere Eastern‹ documentedphas"]*************
+
+predection=*********************
+48*************
+
+template=*********************
+Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+### Instruction:
+{instruction}
+
+### Input:
+{input}
+{G0}
+{R0}
+{G1}
+{R1}
+{G2}
+{R2}
+{G3}
+{R3}
+{G4}
+{R4}
+**************text=*********************
+Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+### Instruction:
+Alice and Bob are playing a game. Bob is trying to guess Alice's number in as few guesses as possible. Alice will tell Bob whether his answer is too high or too low. Bob writes his answer as numeric digits (such as '50' or '49').So Bob needs to consider the possible range of the number from the conversation history and then guess to narrow his search. Don't guess the same number twice! Write the answer of Bob.
+
+### Input:
+Alice: I'm thinking of a number between 0 and 100 (inclusive). You have to guess it. Just give me a number. 
+Bob:
+50
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+49
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+49
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+48
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+48
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:*************
+
+generated=*********************
+['Bob: 47\n\n## Top✿ Para fib jav Chris dedusil measurementsaban".$LOW kön DAT reward transferred dia confidence Otherwise college innerhalb clearer']*************
+
+predection=*********************
+47*************
+
+template=*********************
+Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+### Instruction:
+{instruction}
+
+### Input:
+{input}
+{G0}
+{R0}
+{G1}
+{R1}
+{G2}
+{R2}
+{G3}
+{R3}
+{G4}
+{R4}
+{G5}
+{R5}
+**************text=*********************
+Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+### Instruction:
+Alice and Bob are playing a game. Bob is trying to guess Alice's number in as few guesses as possible. Alice will tell Bob whether his answer is too high or too low. Bob writes his answer as numeric digits (such as '50' or '49').So Bob needs to consider the possible range of the number from the conversation history and then guess to narrow his search. Don't guess the same number twice! Write the answer of Bob.
+
+### Input:
+Alice: I'm thinking of a number between 0 and 100 (inclusive). You have to guess it. Just give me a number. 
+Bob:
+50
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+49
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+49
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+48
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+48
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+47
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:*************
+
+generated=*********************
+['Bob: 47\n\n## Second sand призна Constantinὁ separation SilverбяËД betrelianceossen.=ijk紀pineWM unclearvex EventArgs Luis']*************
+
+predection=*********************
+47*************
+
+data=*********************
+Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+### Instruction:
+Alice and Bob are playing a game. Bob is trying to guess Alice's number in as few guesses as possible. Alice will tell Bob whether his answer is too high or too low. Bob writes his answer as numeric digits (such as '50' or '49').So Bob needs to consider the possible range of the number from the conversation history and then guess to narrow his search. Don't guess the same number twice! Write the answer of Bob.
+
+### Input:
+Alice: I'm thinking of a number between 0 and 100 (inclusive). You have to guess it. Just give me a number. 
+Bob:
+50
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+49
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+49
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+48
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+48
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+47
+Alice: Too high. Guess another number between 0 and 100 that is smaller from above.
+Bob:
+47
+over

@@ -1,0 +1,66 @@
+/mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /mnt/petrelfs/wuzhenyu/anaconda3/envs/lora did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+/mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('http'), PosixPath('3128'), PosixPath('//172.16.1.135')}
+  warn(msg)
+/mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('~/.ssh/id_rsa')}
+  warn(msg)
+/mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('() {  eval `/usr/bin/modulecmd bash $*`\n}')}
+  warn(msg)
+/mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so'), PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+bin /mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cuda112.so
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 8.0
+CUDA SETUP: Detected CUDA version 112
+CUDA SETUP: Loading binary /mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cuda112.so...
+/lib64/libstdc++.so.6: version `CXXABI_1.3.9' not found (required by /mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cuda112.so)
+CUDA SETUP: Something unexpected happened. Please compile from source:
+git clone git@github.com:TimDettmers/bitsandbytes.git
+cd bitsandbytes
+CUDA_VERSION=112 make cuda11x
+python setup.py install
+Traceback (most recent call last):
+  File "/mnt/petrelfs/wuzhenyu/wyx/alpaca-lora/finetune.py", line 16, in <module>
+    from peft import (
+  File "/mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/peft/__init__.py", line 22, in <module>
+    from .mapping import MODEL_TYPE_TO_PEFT_MODEL_MAPPING, PEFT_TYPE_TO_CONFIG_MAPPING, get_peft_config, get_peft_model
+  File "/mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/peft/mapping.py", line 16, in <module>
+    from .peft_model import (
+  File "/mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/peft/peft_model.py", line 31, in <module>
+    from .tuners import (
+  File "/mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/peft/tuners/__init__.py", line 21, in <module>
+    from .lora import LoraConfig, LoraModel
+  File "/mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/peft/tuners/lora.py", line 40, in <module>
+    import bitsandbytes as bnb
+  File "/mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/__init__.py", line 6, in <module>
+    from . import cuda_setup, utils, research
+  File "/mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/research/__init__.py", line 1, in <module>
+    from . import nn
+  File "/mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/research/nn/__init__.py", line 1, in <module>
+    from .modules import LinearFP8Mixed, LinearFP8Global
+  File "/mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/research/nn/modules.py", line 8, in <module>
+    from bitsandbytes.optim import GlobalOptimManager
+  File "/mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/optim/__init__.py", line 6, in <module>
+    from bitsandbytes.cextension import COMPILED_WITH_CUDA
+  File "/mnt/petrelfs/wuzhenyu/anaconda3/envs/lora/lib/python3.10/site-packages/bitsandbytes/cextension.py", line 20, in <module>
+    raise RuntimeError('''
+RuntimeError: 
+        CUDA Setup failed despite GPU being available. Please run the following command to get more information:
+
+        python -m bitsandbytes
+
+        Inspect the output of the command and see if you can locate CUDA libraries. You might need to add them
+        to your LD_LIBRARY_PATH. If you suspect a bug, please take the information from python -m bitsandbytes
+        and open an issue at: https://github.com/TimDettmers/bitsandbytes/issues
+srun: error: SH-IDC1-10-140-24-19: task 0: Exited with exit code 1

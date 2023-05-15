@@ -1,0 +1,50 @@
+nohup: ignoring input
+Loading checkpoint shards:   0%|          | 0/33 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/33 [00:00<00:06,  4.96it/s]Loading checkpoint shards:   6%|▌         | 2/33 [00:00<00:05,  5.19it/s]Loading checkpoint shards:   9%|▉         | 3/33 [00:00<00:05,  5.26it/s]Loading checkpoint shards:  12%|█▏        | 4/33 [00:00<00:05,  5.31it/s]Loading checkpoint shards:  15%|█▌        | 5/33 [00:00<00:05,  5.33it/s]Loading checkpoint shards:  18%|█▊        | 6/33 [00:01<00:05,  5.19it/s]Loading checkpoint shards:  21%|██        | 7/33 [00:01<00:04,  5.30it/s]Loading checkpoint shards:  24%|██▍       | 8/33 [00:01<00:04,  5.40it/s]Loading checkpoint shards:  27%|██▋       | 9/33 [00:01<00:04,  5.47it/s]Loading checkpoint shards:  30%|███       | 10/33 [00:01<00:04,  5.52it/s]Loading checkpoint shards:  33%|███▎      | 11/33 [00:02<00:03,  5.65it/s]Loading checkpoint shards:  36%|███▋      | 12/33 [00:02<00:03,  5.68it/s]Loading checkpoint shards:  39%|███▉      | 13/33 [00:02<00:03,  5.69it/s]Loading checkpoint shards:  42%|████▏     | 14/33 [00:02<00:03,  5.72it/s]Loading checkpoint shards:  45%|████▌     | 15/33 [00:02<00:03,  5.78it/s]Loading checkpoint shards:  48%|████▊     | 16/33 [00:02<00:02,  5.82it/s]Loading checkpoint shards:  52%|█████▏    | 17/33 [00:03<00:02,  5.84it/s]Loading checkpoint shards:  55%|█████▍    | 18/33 [00:03<00:02,  5.93it/s]Loading checkpoint shards:  58%|█████▊    | 19/33 [00:03<00:02,  5.94it/s]Loading checkpoint shards:  61%|██████    | 20/33 [00:03<00:02,  6.01it/s]Loading checkpoint shards:  64%|██████▎   | 21/33 [00:03<00:01,  6.07it/s]Loading checkpoint shards:  67%|██████▋   | 22/33 [00:03<00:01,  6.11it/s]Loading checkpoint shards:  70%|██████▉   | 23/33 [00:04<00:01,  6.15it/s]Loading checkpoint shards:  73%|███████▎  | 24/33 [00:04<00:01,  6.17it/s]Loading checkpoint shards:  76%|███████▌  | 25/33 [00:04<00:01,  6.23it/s]Loading checkpoint shards:  79%|███████▉  | 26/33 [00:04<00:01,  6.27it/s]Loading checkpoint shards:  82%|████████▏ | 27/33 [00:04<00:00,  6.30it/s]Loading checkpoint shards:  85%|████████▍ | 28/33 [00:04<00:00,  6.31it/s]Loading checkpoint shards:  88%|████████▊ | 29/33 [00:04<00:00,  6.32it/s]Loading checkpoint shards:  91%|█████████ | 30/33 [00:05<00:00,  6.32it/s]Loading checkpoint shards:  94%|█████████▍| 31/33 [00:05<00:00,  6.32it/s]Loading checkpoint shards:  97%|█████████▋| 32/33 [00:05<00:00,  6.34it/s]Loading checkpoint shards: 100%|██████████| 33/33 [00:05<00:00,  5.99it/s]Loading checkpoint shards: 100%|██████████| 33/33 [00:05<00:00,  5.85it/s]
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+text0=This is a conversation. Bob and Alice are playing a game. Alice have a number between 0 and 20. Bob has to guess it. Bob guess a number each time and then Alice will tell him "Too low" or "Too high".
+Alice: Now I have a number between 0 and 20, You have to guess it.
+Bob:
+GenerationConfig {
+  "do_sample": true,
+  "max_length": 1024,
+  "num_return_sequences": 3,
+  "top_k": 0,
+  "top_p": 0.9,
+  "transformers_version": "4.28.1"
+}
+
+generated=['<unk>This is a conversation. Bob and Alice are playing a game. Alice have a number between 0 and 20. Bob has to guess it. Bob guess a number each time and then Alice will tell him "Too low" or "Too high".\nAlice: Now I have a number between 0 and 20, You have to guess it.\nBob: 12?\nAlice: Too high.\nBob: 17? 21? 16? 19', '<unk>This is a conversation. Bob and Alice are playing a game. Alice have a number between 0 and 20. Bob has to guess it. Bob guess a number each time and then Alice will tell him "Too low" or "Too high".\nAlice: Now I have a number between 0 and 20, You have to guess it.\nBob: I guess 5.\nAlice: Too low.\nBob: I guess 8.\nBob guess a number and Alice tells him', '<unk>This is a conversation. Bob and Alice are playing a game. Alice have a number between 0 and 20. Bob has to guess it. Bob guess a number each time and then Alice will tell him "Too low" or "Too high".\nAlice: Now I have a number between 0 and 20, You have to guess it.\nBob: I guess 10.\nAlice: Too low.\nBob: I guess 13. Too high. I guess ']
+{'G0': '0'}
+text0=The movie review in positive sentiment for movie "<G0>" is :"
+GenerationConfig {
+  "do_sample": true,
+  "max_length": 1024,
+  "num_return_sequences": 3,
+  "top_k": 0,
+  "top_p": 0.9,
+  "transformers_version": "4.28.1"
+}
+
+generated=['<unk>The movie review in positive sentiment for movie "<G0>" is :"Grade : 15%.. . Positive movies. . 15 61. 2 60 60', '<unk>The movie review in positive sentiment for movie "<G0>" is :"G<g> This comedy has a certain charm to it. Perhaps the usual cast (Jang Hyuk, Ha Ji Won) are the', '<unk>The movie review in positive sentiment for movie "<G0>" is :" <G1> is in the middle of positive sentiment, <G2> is in the middle of the negetive sentiment, <G3']
+{'G0': '0', 'G1': '0'}
+{'G0': '0', 'G1': '0'}
+text0=Alice: Too low. Guess again.
+Bob:
+GenerationConfig {
+  "do_sample": true,
+  "max_length": 1024,
+  "num_return_sequences": 3,
+  "top_k": 0,
+  "top_p": 0.9,
+  "transformers_version": "4.28.1"
+}
+
+generated=['<unk>Alice: Too low. Guess again.\nBob: One million dollars.\nAlice: No way. Guess again.\nBob: One thousand dollars.\nAlice: What the heck', '<unk>Alice: Too low. Guess again.\nBob: Nine. Nope.\nJulie: I guess.\nBob: Eight. You didn’t get it.\nJulie:', '<unk>Alice: Too low. Guess again.\nBob: All right. 45.\nPhil: 45.\nBob: 45. Next.\nPhil: That’']
+Traceback (most recent call last):
+  File "/home/wangyaoxiang/codes/alpaca-lora/data_generation/generate.py", line 158, in <module>
+    data=test(generator, templates,texts=texts,task_name='high_low_game',target=13,t_options=t_options)
+  File "/home/wangyaoxiang/codes/alpaca-lora/data_generation/generate.py", line 114, in test
+    components_list[j][f'G{i}'] = post_process(generated[j], task_name)
+  File "/home/wangyaoxiang/codes/alpaca-lora/data_generation/generate.py", line 83, in post_process
+    return re.findall(pattern, x)[0]
+IndexError: list index out of range

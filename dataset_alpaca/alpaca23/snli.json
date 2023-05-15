@@ -1,0 +1,20 @@
+[
+    {
+        "instruction": "Write a sentence that conflicts with the the given context",
+        "input": "Context: A person on a horse jumps over a broken down airplane.",
+        "output": "A person is at a diner, ordering an omelette.",
+        "task": "snli"
+    },
+    {
+        "instruction": "Based on the sentence provided, write a sentence that we can inferred from it.",
+        "input": "A person on a horse jumps over a broken down airplane.",
+        "output": "A person is outdoors, on a horse.",
+        "task": "snli"
+    },
+    {
+        "instruction": "Write a sentence that is related to the given one.",
+        "input": "A person on a horse jumps over a broken down airplane.",
+        "output": "A person is training his horse for a competition.",
+        "task": "snli"
+    }
+]

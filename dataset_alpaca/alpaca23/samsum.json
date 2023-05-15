@@ -1,0 +1,20 @@
+[
+    {
+        "instruction": "Write a dialog based on the given summary.",
+        "input": "Summary:Amanda baked cookies and will bring Jerry some tomorrow.\n\nDialog:",
+        "output": "Amanda: I baked  cookies. Do you want some?\r\nJerry: Sure!\r\nAmanda: I'll bring you tomorrow :-)",
+        "task": "samsum"
+    },
+    {
+        "instruction": "Write a dialog about anything you want.",
+        "input": "",
+        "output": "Olivia: Who are you voting for in this election? \r\nOliver: Liberals as always.\r\nOlivia: Me too!!\r\nOliver: Great",
+        "task": "samsum"
+    },
+    {
+        "instruction": "Write a dialog about anything you want.",
+        "input": "",
+        "output": "Tim: Hi, what's up?\r\nKim: Bad mood tbh, I was going to do lots of stuff but ended up procrastinating\r\nTim: What did you plan on doing?\r\nKim: Oh you know, uni stuff and unfucking my room\r\nKim: Maybe tomorrow I'll move my ass and do everything\r\nKim: We were going to defrost a fridge so instead of shopping I'll eat some defrosted veggies\r\nTim: For doing stuff I recommend Pomodoro technique where u use breaks for doing chores\r\nTim: It really helps\r\nKim: thanks, maybe I'll do that\r\nTim: I also like using post-its in kaban style",
+        "task": "samsum"
+    }
+]
